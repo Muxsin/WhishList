@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>WishList</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <noscript>Необходимо включить поддержку JavaScript в вашем браузере.</noscript>
+  <div class="container">
+    <div id="root">
+      <div data-id="leftbar" class="leftbar">
+        <div data-id="leftbar-header" class="leftbar-header">
+          <h1>WishList</h1>
+          <div>Необходимо: <span data-id="total">0</span> с.</div>
+        </div>
+        <div data-id="leader">Загружаем данные...</div>
+        <ul data-id="wish-list" class="wish-list">
+        </ul>
+      </div>
+  
+      <div data-id="rightbar" class="rightbar">
+        <form data-id="wish-form" class="wish-form">
+          <fieldset data-id="wish-fieldset" class="wish-fieldset">
+              <div data-id="message" class="massage"></div>
+              <div>
+                  <input data-input="name" id="name-input" placeholder="Название">
+              </div>
+              <div>
+                  <input data-input="price" id="price-input" type="number" placeholder="Цена">
+              </div>
+              <div>
+                  <textarea data-input="description" id="description-input" rows="5" placeholder="Описание"></textarea>
+              </div>
+              <button>Добавить</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div>
+  </div>
+    
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
